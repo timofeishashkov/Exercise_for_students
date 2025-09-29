@@ -1,0 +1,16 @@
+---
+title: "Exercise3"
+author: Timofei
+format: html
+editor: visual
+---
+
+```{r}
+paste("Hello, R!")
+```
+
+You can add options to executable code like this
+
+```{python}
+print("Hello, python!")
+```
