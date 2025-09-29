@@ -1,0 +1,34 @@
+---
+title: "Exercise8"
+author: "Timofei"
+format: html
+editor: visual
+---
+
+## Short explanation
+
+In this quarto file we practise making r and python code with quarto.
+```{r}
+library(dplyr)
+```
+
+```{r}
+data <- mtcars
+avg <- mean(data$mpg)
+paste("Mean of entries in the column data$mpg is equal to ", avg)
+```
+
+```{python}
+import pandas
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+```
+
+```{python}
+iris = load_iris(as_frame=True)
+data_frame = iris.frame
+data_frame.plot(x="sepal length (cm)", y="sepal width (cm)", kind="scatter", marker="o", title="Line plot (pandas)")
+plt.show()
+```
+
+
